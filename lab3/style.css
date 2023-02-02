@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+  background-image: url("cities.jpeg");
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  padding: 100px;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+
+
+nav {
+  background: #cce8b5;
+  display: flex;
+  padding: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+#London {
+  background-color: #ebf38f;
+  display: block;
+  padding: 50px;
+}
+
+#London::after {
+  content: url(london.jpeg);
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+#Paris {
+  background-color: #00c7fc;
+  display: block;
+  padding: 50px;
+}
+
+#Paris::after {
+  content: url(paris.png);
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+#Tokyo {
+  background-color: #e392fe;
+  display: block;
+  padding: 50px;
+}
+
+
+#Tokyo::after {
+  content: url(tokyo.jpeg);
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  background-color: #00a3d7;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  clear: both
+}
+
+a[href="#"] {
+  color: red;
+}
+
+nav ul li:hover {
+  background-color: #ffdad8;
+}
