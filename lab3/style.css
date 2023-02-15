@@ -4,29 +4,60 @@
 
 body {
   font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+
+  min-width: 300px;
+
+  width: 100%;
 }
+
 
 header {
-  background-image: url("cities.jpeg");
-  background-size: cover; 
-  background-repeat: no-repeat; 
-  background-position: center; 
-  padding: 100px;
-  text-align: center;
-  font-size: 40px;
-  color: white;
-}
 
+  display: flex;
+
+  background-image: url("cities.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  padding: 100px;
+
+  text-align: center;
+  font-size: 300%;
+  color: white;
+
+  min-width: 300px;
+
+  width: 100%;
+}
 
 nav {
   background: #cce8b5;
-  display: flex;
   padding: 50px;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
+
+  font-size: 140%;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  font-size: 120%;
+}
+
+h1 {
+  font-size: 180%;
+}
+
+p {
+  font-size: 140%;
 }
 
 
@@ -34,13 +65,7 @@ nav ul {
   background-color: #ebf38f;
   display: block;
   padding: 50px;
-}
 
-#London::after {
-  content: url(london.jpeg);
-  display: inline-block;
-  width: 50px;
-  height: 50px;
 }
 
 #Paris {
@@ -49,25 +74,10 @@ nav ul {
   padding: 50px;
 }
 
-#Paris::after {
-  content: url(paris.png);
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-}
-
 #Tokyo {
   background-color: #e392fe;
   display: block;
   padding: 50px;
-}
-
-
-#Tokyo::after {
-  content: url(tokyo.jpeg);
-  display: inline-block;
-  width: 100%;
-  height: 100%;
 }
 
 footer {
@@ -86,3 +96,81 @@ a[href="#"] {
 nav ul li:hover {
   background-color: #ffdad8;
 }
+
+/* phone screen */
+
+@media only screen and (max-width: 600px)  {
+
+  section {
+    width: 400vw;
+  }
+
+
+  header {
+    width: 400vw;
+  }
+
+  footer {
+    width: 400vw;
+  }
+
+  li {
+    font-size: 400%;
+  }
+
+  h1 {
+    font-size: 500%;
+  }
+
+  h2{
+    font-size: 400%;
+  }
+
+  p {
+    font-size: 500%;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+/* tablet screen*/
+
+@media only screen and (min-width: 768px) and (max-width: 996px) {
+  section {
+    width: 400vw;
+    height: auto;
+  }
+
+  header {
+    width: 400vw;
+    height: 100%;
+  }
+
+  footer {
+    width: 400vw;
+  }
+
+  li {
+    font-size: 600%;
+  }
+
+  h1 {
+    font-size: 800%;
+  }
+
+  h2{
+    font-size: 600%;
+  }
+
+  p {
+    font-size: 800%;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+
